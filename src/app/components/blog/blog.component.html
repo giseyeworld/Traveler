@@ -1,0 +1,141 @@
+<div class="backcolor">
+
+</div>
+
+<div class="blogImage mt-4">
+    <div class="img">
+        <img src="images/img11.jpeg" class="w-100" alt="">
+    </div>
+    <div class="text">
+        <h5>"Explore the world one story at a time."</h5>
+        <h6>Start Your Adventure</h6>
+    </div>
+</div>
+
+<div class="blogPosts">
+    <h2 class="text-center mt-5">Latest Blog Posts</h2>
+
+   <div class="mx-auto w-70">
+    <div class="container mt-5 text-center">
+        
+        <div class="layer w-75 m-auto ">
+           <div class="row justify-content-center "> 
+               <div class="col-md-6  text-center ">
+                <div class="waterfalls ">
+                    <img src="images/img22.jpeg" class="w-100 mx-auto" alt="">
+                </div>
+             
+               </div>
+               <div class="col-md-6">
+                <div class="texts "> 
+                    <div class="gems mt-4">
+                        <h4>10 Hidden Gems in Bali</h4>
+                        <h5 class="pb-4">You Need To Visit</h5>
+                        <span>Steve Hans. December 10, 2023</span>
+                    </div>
+                    <div class="more mt-3 ">
+                        <h5>Read More >></h5>
+                    </div>
+                </div>
+               </div>
+          
+        </div>
+        </div>
+      
+   </div>
+  
+   <div class="container mt-5 text-center">
+        
+    <div class="layer w-75 m-auto ">
+       <div class="row justify-content-center "> 
+        <div class="col-md-6">
+            <div class="texts "> 
+                <div class="gems mt-4">
+                    <h4>Top 5 European cities for</h4>
+                    <h5 class="pb-4">Solo Traveler</h5>
+                    <span>Julia Clan. May 23, 2023</span>
+                </div>
+                <div class="more mt-3 ">
+                    <h5>Read More >></h5>
+                </div>
+            </div>
+           </div>
+           <div class="col-md-6  text-center ">
+            <div class="waterfalls ">
+                <img src="images/img33.jpeg" class="w-100 mx-auto" alt="">
+            </div>
+         
+           </div>
+          
+      
+    </div>
+    </div>
+  
+</div>
+
+
+
+   
+   </div>
+    
+
+</div>
+
+
+
+
+<hr class="custom-hr">
+
+<div class="container blog mt-5 mx-auto">
+    <h2 class="text-center mb-4">Add Your Own Adventure Now! </h2>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="mb-3">
+                <label for="CountryTitle" class="form-label">Country Name</label>
+                <input type="text" class="form-control p-1" [(ngModel)]="newBlog.name" id="CountryTitle" placeholder="Enter country name">
+            </div>
+            <div class="mb-3">
+                <label for="blogTitle" class="form-label">Blog Title</label>
+                <input type="text" class="form-control p-1" [(ngModel)]="newBlog.title" id="blogTitle" placeholder="Enter blog title">
+            </div>
+            <div class="mb-3">
+                <label for="blogContent" class="form-label">Blog Content</label>
+                <textarea class="form-control p-1" [(ngModel)]="newBlog.content" id="blogContent" rows="5" placeholder="Write your blog content here..."></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="blogImage" class="form-label">Upload Blog Image</label>
+                <input class="form-control p-1" type="file" (change)="onImageSelected($event)" id="blogImage" accept="image/*">
+            </div>
+
+            <div class="mb-3">
+                <p id="error-message" class="error-message text-warning">{{ errorMessage }}</p>
+            </div>
+
+            <div class="d-grid">
+                <button type="button" class="btn btn-warning createBtn " (click)="addBlog()">Create Blog</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="search">
+    <input type="text" class="form-control mb-4 mx-auto w-50 mt-5 p-1" [(ngModel)]="searchTerm" (keyup)="searchBlogs()" id="searchInput" placeholder="Search Blogs...">
+    <div id="searchMessage" class="text-warning text-center mb-3">{{ searchMessage }}</div>
+</div>
+
+
+<div id="blogPosts" class="mt-5 row">
+    <div class="col-md-6 mb-4" *ngFor="let blog of filteredBlogs" id="blog-{{ blog.id }}">
+      <div class="card">
+        <img *ngIf="blog.imgSrc" [src]="blog.imgSrc" class="card-img-top" alt="Blog Image">
+        <div class="card-body">
+          <h6 class="text-muted">Country: {{ blog.name }}</h6>
+          <h5 class="card-title">{{ blog.title }}</h5>
+          <p class="card-text">{{ blog.content }}</p>
+          <button class="btn btn-danger btn-sm" (click)="deleteBlog(blog.id)">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+

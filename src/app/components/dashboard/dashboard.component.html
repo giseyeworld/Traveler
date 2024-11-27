@@ -1,0 +1,48 @@
+
+
+<div class="backcolor">
+  
+</div>
+<div class="dashboard-container">
+    <!-- Previous sidebar code remains the same -->
+    <div class="sidebar">
+      <div class="profile-pic">
+        <img [src]="profileImage" alt="Profile Picture">
+      </div>
+      <div class="nav-items">
+        <div class="nav-item">📎</div>
+        <div class="nav-item">🧳</div>
+        <div class="nav-item">🖼️</div>
+        <div class="nav-item">⚙️</div>
+      </div>
+      <div class="nav-item logout">↪️</div>
+    </div>
+  
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="header">
+        <h1 class="welcome-text">Welcome {{userName}},</h1>
+        <div class="location text-bg-light">
+          📍 Today you are in {{currentLocation}}
+        </div>
+      </div>
+      
+
+<div class="container d-flex gap-5 ">
+
+  <div class="stats">
+    <div class="stat-card" *ngFor="let stat of statsData | keyvalue">
+      <div class="stat-number">{{stat.value}}</div>
+      <div class="stat-label">{{stat.key}}</div>
+    </div>
+  </div>
+  
+  <div class="map-container">
+    <div  class="map"></div>
+  </div>
+
+</div>
+
+      
+    </div>
+  </div>

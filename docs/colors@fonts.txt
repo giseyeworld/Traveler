@@ -1,0 +1,28 @@
+main color =  #FFEFD4
+second color = #563500
+#604B2A
+
+
+font-logo = 
+font-family: Sail;
+font-size: 30px;
+font-weight: 400;
+line-height: 34.62px;
+text-align: left;
+
+
+main font = 
+font-family: Oswald;
+font-size: 30px;
+font-weight: 700;
+line-height: 44.46px;
+text-align: left;
+
+
+second font = 
+
+font-family: Lobster Two;
+font-size: 15px;
+font-weight: 400;
+line-height: 18.75px;
+text-align: left;

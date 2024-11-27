@@ -1,0 +1,172 @@
+.backcolor {
+
+    width: 100%;
+    height: 120px;
+    background-color: var(--second-color);
+
+}
+
+
+
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem;
+  }
+  
+  .map-container {
+	width: 100%;
+	height: 400px;
+	margin-bottom: 2rem;
+  }
+  
+  .map-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 8px;
+	border: 1px solid;
+	border-color: var(--second-color);
+  }
+  
+
+
+.card {
+	width: 300px;
+	height: 200px;
+	perspective: 1000px;
+	margin-right: 40px;
+  }
+  
+  .card-inner {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform 0.999s;
+  }
+  
+  .card:hover .card-inner {
+	transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+  }
+  
+  .card-front {
+	background-color: var(--second-color);
+	color: #fff;
+	display: flex;
+	align-items: center;
+	border: 10px solid var(--second-color);
+	border-radius: 10px;
+	justify-content: center;
+	font-size: 24px;
+	transform: rotateY(0deg);
+  }
+  
+  .card-back {
+	background-color: var(--third-color);
+	color: #fff;
+	display: flex;
+	align-items: center;
+	border: 10px solid var(--third-color);
+	border-radius: 10px;
+	justify-content: center;
+	font-size: 24px;
+	transform: rotateY(180deg);
+  }
+  
+
+
+
+
+
+  
+  .form-section {
+	background: #ffffff;
+	padding: 2rem;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-section h2 {
+	margin: 0 0 1rem;
+	color: #333;
+	font-size: 24px;
+  }
+  
+  .form-subtitle {
+	color: #666;
+	margin-bottom: 2rem;
+  }
+  
+  .contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+  }
+  
+  .form-row {
+	display: flex;
+	gap: 1.5rem;
+  }
+  
+  .form-group {
+	flex: 1;
+  }
+  
+  input, textarea {
+	width: 100%;
+	padding: 0.75rem;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 16px;
+  }
+  
+  textarea {
+	resize: vertical;
+	min-height: 120px;
+  }
+  
+  .submit-button {
+	background: var(--second-color);
+	color: white;
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+	background:var(--third-color);
+  }
+  
+  .submit-button:disabled {
+	background: #cccccc;
+	cursor: not-allowed;
+  }
+  
+
+  @media (max-width: 768px) {
+	.info-cards {
+	  flex-direction: column;
+	}
+  
+	.form-row {
+	  flex-direction: column;
+	}
+  }
+
+
+
+  

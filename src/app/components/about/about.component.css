@@ -1,0 +1,420 @@
+.backcolor {
+
+    width: 100%;
+    height: 120px;
+    background-color: var(--second-color);
+
+
+}
+
+
+
+.section {
+    padding: 80px 0;
+  }
+  
+  .section-sm {
+    padding: 50px 0;
+  }
+  
+  .section-first {
+    padding-top: 110px;
+  }
+  
+  .section-last {
+    padding-bottom: 110px;
+  }
+  
+  .section-fluid {
+    width: 100%;
+  }
+  
+  .breadcrumbs-custom {
+    position: relative;
+    padding: 80px 0;
+    text-align: center;
+    background-color: #2c343b;
+  }
+  
+  .breadcrumbs-custom-title {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  
+  .bg-overlay-60:before {
+    content: '';
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+
+  }
+
+
+
+
+  .tabs-custom {
+    margin-top: 30px;
+  }
+  
+  .tabs-custom .nav-link {
+    padding: 15px 25px;
+    font-size: 16px;
+    color: #151515;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .tabs-custom .nav-link.active {
+    color: #01b3a7;
+    border-bottom: 3px solid #01b3a7;
+  }
+  
+  .tab-content {
+    padding: 30px 0;
+  }
+  
+  .tab-pane {
+    padding: 20px 0;
+  }
+  
+  /* Progress Bars */
+  .progress-header {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar-linear-wrap {
+    height: 4px;
+    background: #efefef;
+    margin-bottom: 25px;
+  }
+  
+  .progress-bar-linear {
+    position: relative;
+    height: 100%;
+    background: #01b3a7;
+    transition: width 0.6s ease;
+  }
+  
+  .progress-value {
+    position: absolute;
+    right: 0;
+    top: -25px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+
+  
+
+   /* Testimonials Section Container */
+.section-last {
+    position: relative;
+    padding: 100px 0;
+    background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+  }
+  
+  .container h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    position: relative;
+    color: #2c343b;
+  }
+  
+  .container h3::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #01b3a7;
+  }
+  
+  /* Owl Carousel Customization */
+  .owl-carousel {
+    padding: 0 50px;
+  }
+  
+  .owl-modern {
+    position: relative;
+  }
+  
+  .owl-modern .owl-dots {
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .owl-modern .owl-dot {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #01b3a7;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .owl-modern .owl-dot.active {
+    background: #01b3a7;
+    transform: scale(1.2);
+  }
+  
+  /* Quote Card Styling */
+  .quote-lisa {
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .quote-lisa-body {
+    position: relative;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+  }
+  
+  .quote-lisa-body:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Quote Figure (Image) */
+  .quote-lisa-figure {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 25px;
+    position: relative;
+  }
+  
+  .quote-lisa-figure::after {
+    content: '"';
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #01b3a7;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: Georgia, serif;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .img-circles {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #01b3a7;
+    box-shadow: 0 5px 15px rgba(1, 179, 167, 0.2);
+  }
+  
+  /* Quote Text */
+  .quote-lisa-text {
+    position: relative;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .quote-lisa-text p.q {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #6c757d;
+    font-style: italic;
+    margin: 0;
+  }
+  
+  /* Author Citation */
+  .quote-lisa-cite {
+    margin: 0 0 5px;
+    text-align: center;
+  }
+  
+  .quote-lisa-cite a {
+    color: #2c343b;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .quote-lisa-cite a:hover {
+    color: #01b3a7;
+  }
+  
+  .quote-lisa-status {
+    font-size: 14px;
+    color: #01b3a7;
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* Carousel Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+  
+  .fadeIn {
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  .fadeOut {
+    animation: fadeOut 0.5s ease forwards;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1199px) {
+    .section-last {
+      padding: 80px 0;
+    }
+    
+    .container h3 {
+      font-size: 2.2rem;
+      margin-bottom: 50px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .owl-carousel {
+      padding: 0 30px;
+    }
+    
+    .quote-lisa-body {
+      padding: 30px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .section-last {
+      padding: 60px 0;
+    }
+    
+    .container h3 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+    
+    .quote-lisa-text p.q {
+      font-size: 15px;
+    }
+    
+    .quote-lisa-cite a {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .owl-carousel {
+      padding: 0 15px;
+    }
+    
+    .quote-lisa-body {
+      padding: 25px;
+    }
+    
+    .quote-lisa-figure {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+    }
+    
+    .img-circles {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  /* Print Optimization */
+  @media print {
+    .owl-carousel {
+      padding: 0;
+    }
+    
+    .quote-lisa-body {
+      box-shadow: none;
+      border: 1px solid #ddd;
+    }
+    
+    .owl-dots {
+      display: none;
+    }
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 991px) {
+    .section {
+      padding: 60px 0;
+    }
+    
+    .section-sm {
+      padding: 40px 0;
+    }
+    
+    .breadcrumbs-custom {
+      padding: 60px 0;
+    }
+    
+    .breadcrumbs-custom-title {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .section {
+      padding: 40px 0;
+    }
+    
+    .section-sm {
+      padding: 30px 0;
+    }
+    
+    .tabs-custom .nav-link {
+      padding: 10px 15px;
+    }
+    
+    .counter-classic-number {
+      font-size: 2.5rem;
+    }
+  }
+  

@@ -1,0 +1,95 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+    /* overflow: hidden; */
+  }
+
+
+
+@font-face {
+    font-family: Sail ;
+    src: url(assests/fonts/Sail/Sail-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: Oswald ;
+    src: url(assests/fonts/Oswald/Oswald-VariableFont_wght.ttf);
+    src: url(assests/fonts/Oswald/static/Oswald-Bold.ttf);
+}
+
+@font-face {
+    font-family: Lobster Two;
+    /* src: url(assests/fonts/Lobster_Two/LobsterTwo-Regular.ttf);
+    src: url(assests/fonts/Lobster_Two/LobsterTwo-Bold.ttf); */
+    src: url(assests/fonts/Lobster_Two/LobsterTwo-Italic.ttf);
+}
+
+@font-face {
+    font-family: CrimsonText;
+    src: url(assests/fonts/Crimson_Text/CrimsonText-Regular.ttf);
+    src: url(assests/fonts/Crimson_Text/CrimsonText-SemiBold.ttf);
+}
+
+
+:root{
+
+    --main-color : #FFEFD4;
+    --second-color : #3c5a3c;
+    /* --third-color : #cd8f2d;# */
+    --third-color : #E2634E;
+    --other1-color : #604B2A;
+    --other2-color : #563500;
+    
+
+    --main-font : Oswald;
+    --second-font : Lobster Two;
+    --logo-font : Sail ;
+    --other1-font :CrimsonText ;
+    
+
+    
+
+}
+::selection {
+    color: var(--second-color);
+    background: var(--main-color);
+  }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+app-header, app-navbar {
+    /* position: fixed; */
+    position: absolute;
+    /* width: 100%; */
+    width: 90%;
+    z-index: 1000;
+    left: 5%;
+  }
+  
+app-header {
+    top: 0;
+  }
+
+  
+app-navbar {
+    top: 40px; 
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+
+
+/* ================== */
+
+/*  */

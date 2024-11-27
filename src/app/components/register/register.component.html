@@ -1,0 +1,82 @@
+<div class="backcolor">
+  
+</div>
+
+
+<div class="container">
+    <div class="registration-box">
+      <h1 class="title">Sign Up and Start Your Journey with Us</h1>
+      <p class="subtitle">Get exclusive travel tips, destination guides, and more delivered straight to your inbox</p>
+      
+      <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <input 
+            type="text" 
+            class="form-control" 
+            formControlName="firstName"
+            placeholder="First Name"
+            [ngClass]="{ 'error': submitted && f['firstName'].errors }"
+          >
+          <span class="error-message" *ngIf="submitted && f['firstName'].errors?.['required']">
+            Please enter your first name
+          </span>
+        </div>
+  
+        <div class="form-group">
+          <input 
+            type="text" 
+            class="form-control" 
+            formControlName="lastName"
+            placeholder="Last Name"
+            [ngClass]="{ 'error': submitted && f['lastName'].errors }"
+          >
+          <span class="error-message" *ngIf="submitted && f['lastName'].errors?.['required']">
+            Please enter your last name
+          </span>
+        </div>
+  
+        <div class="form-group">
+          <input 
+            type="email" 
+            class="form-control" 
+            formControlName="email"
+            placeholder="Email Address"
+            [ngClass]="{ 'error': submitted && f['email'].errors }"
+          >
+          <span class="error-message" *ngIf="submitted && f['email'].errors?.['required']">
+            Please enter your email address
+          </span>
+          <span class="error-message" *ngIf="submitted && f['email'].errors?.['email']">
+            Please enter a valid email address
+          </span>
+        </div>
+  
+        <div class="form-group">
+          <input 
+            type="password" 
+            class="form-control" 
+            formControlName="password"
+            placeholder="Create Password"
+            [ngClass]="{ 'error': submitted && f['password'].errors }"
+          >
+          <span class="error-message" *ngIf="submitted && f['password'].errors?.['required']">
+            Please enter a password
+          </span>
+          <span class="error-message" *ngIf="submitted && f['password'].errors?.['minlength']">
+            Password must be at least 8 characters
+          </span>
+        </div>
+  
+        <button type="submit" class="submit-btn">Sign Up Now</button>
+  
+        <div class="login-link">
+          Already have an account? <a routerLink="/login">Log in here</a>
+        </div>
+  
+        <p class="terms">
+          By signing up, you agree to our <a routerLink="/terms">Terms of Service</a> and 
+          <a routerLink="/privacy">Privacy Policy</a>
+        </p>
+      </form>
+    </div>
+  </div>
